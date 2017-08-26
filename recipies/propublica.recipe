@@ -37,24 +37,6 @@ class ProPublicaRecipe(BasicNewsRecipe):
     feeds = []
     feeds.append(
         (u'Top Stories', u'http://feeds.propublica.org/propublica/main'))
-    feeds.append(
-        (u'Stimulus', u'http://feeds.propublica.org/propublica/watchdog/stimulus'))
-    feeds.append(
-        (u'Bailout', u'http://feeds.propublica.org/propublica/watchdog/bailout'))
-    feeds.append(
-        (u'Business', u'http://feeds.propublica.org/propublica/business-money'))
-    feeds.append(
-        (u'Justice', u'http://feeds.propublica.org/propublica/justice-law'))
-    feeds.append((u'Energy & Environment',
-                  u'http://feeds.propublica.org/propublica/energy-environment'))
-    feeds.append((u'Government & Politics',
-                  u'http://feeds.propublica.org/propublica/government-politics'))
-    feeds.append(
-        (u'Health & Science', u'http://feeds.propublica.org/propublica/health-science'))
-    feeds.append((u'Media & Technology',
-                  u'http://feeds.propublica.org/propublica/media-technology'))
-    feeds.append((u'National Security',
-                  u'http://feeds.propublica.org/propublica/national-security'))
 
     conversion_options = {'comments': description, 'tags': category, 'language': 'en',
                           'publisher': publisher}
