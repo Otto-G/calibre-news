@@ -1,4 +1,3 @@
-
 from calibre.web.feeds.news import BasicNewsRecipe
 
 
@@ -21,22 +20,26 @@ class ProPublicaRecipe(BasicNewsRecipe):
     no_stylesheets = True
     remove_javascript = True
 
-#    keep_only_tag = []
+#    keep_only_tags = []
 #    keep_only_tags.append(dict(name='div', attrs={'class': 'article'}))
 
-#    remove_tags = []
-#    remove_tags.append(dict(name='div', attrs={'id': 'rollups'}))
-#    remove_tags.append(dict(name='div', attrs={'class': 'follow_info'}))
-#    remove_tags.append(dict(name='ul', attrs={'class': 'long-tools-top'}))
-#    remove_tags.append(dict(name='ul', attrs={'id': 'share-box'}))
-#    remove_tags.append(dict(name='div', attrs={'class': 'tags'}))
-#    remove_tags.append(dict(name='ul', attrs={'class': 'long-tools'}))
-#    remove_tags.append(dict(name='ul', attrs={'id': 'share-box2'}))
-#    remove_tags.append(dict(name='p', attrs={'id': 'original-url'}))
-
-#    feeds = []
-#    feeds.append(
-#        (u'Top Stories', u'http://feeds.propublica.org/propublica/main'))
+    remove_tags = []
+    remove_tags.append(dict(name='div', attrs={'id': 'rollups'}))
+    remove_tags.append(dict(name='div', attrs={'class': 'follow_info'}))
+    remove_tags.append(dict(name='ul', attrs={'class': 'long-tools-top'}))
+    remove_tags.append(dict(name='ul', attrs={'id': 'share-box'}))
+    remove_tags.append(dict(name='div', attrs={'class': 'tags'}))
+    remove_tags.append(dict(name='ul', attrs={'class': 'long-tools'}))
+    remove_tags.append(dict(name='ul', attrs={'id': 'share-box2'}))
+    remove_tags.append(dict(name='p', attrs={'id': 'original-url'}))
+    remove_tags.append(dict(name='aside'))
+    remove_tags.append(dict(name='header'))
+    remove_tags.append(dict(name='div', attrs={'class': 'further-reading'}))
+    remove_tags.append(dict(name='div', attrs={'class': 'content-left'}))
+    remove_tags.append(dict(name='div', attrs={'class': 'content-right'}))
+    remove_tags.append(dict(name='footer'))
+    remove_tags.append(dict(name='ul', attrs={'class': 'fmenu.article-tools'}))
+    remove_tags.append(dict(name='section', attrs={'id': 'comments'}))
 
     feeds = [
         ('Top Stories', 'http://feeds.propublica.org/propublica/main'),
