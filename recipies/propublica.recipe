@@ -8,10 +8,10 @@ class ProPublicaRecipe(BasicNewsRecipe):
     language = 'en'
     version = 1
 
-    title = u'Pro Publica'
-    publisher = u'ProPublica.org'
-    category = u'Political blog'
-    description = u'Independent investigative journalism in the public interest.'
+    title = 'Pro Publica'
+    publisher = 'ProPublica.org'
+    category = 'Political blog'
+    description = 'Independent investigative journalism in the public interest.'
 
     oldest_article = 7
     max_articles_per_feed = 100
@@ -21,31 +21,35 @@ class ProPublicaRecipe(BasicNewsRecipe):
     no_stylesheets = True
     remove_javascript = True
 
-    keep_only_tags = []
-    keep_only_tags.append(dict(name='div', attrs={'class': 'article'}))
+#    keep_only_tag = []
+#    keep_only_tags.append(dict(name='div', attrs={'class': 'article'}))
 
-    remove_tags = []
-    remove_tags.append(dict(name='div', attrs={'id': 'rollups'}))
-    remove_tags.append(dict(name='div', attrs={'class': 'follow_info'}))
-    remove_tags.append(dict(name='ul', attrs={'class': 'long-tools-top'}))
-    remove_tags.append(dict(name='ul', attrs={'id': 'share-box'}))
-    remove_tags.append(dict(name='div', attrs={'class': 'tags'}))
-    remove_tags.append(dict(name='ul', attrs={'class': 'long-tools'}))
-    remove_tags.append(dict(name='ul', attrs={'id': 'share-box2'}))
-    remove_tags.append(dict(name='p', attrs={'id': 'original-url'}))
+#    remove_tags = []
+#    remove_tags.append(dict(name='div', attrs={'id': 'rollups'}))
+#    remove_tags.append(dict(name='div', attrs={'class': 'follow_info'}))
+#    remove_tags.append(dict(name='ul', attrs={'class': 'long-tools-top'}))
+#    remove_tags.append(dict(name='ul', attrs={'id': 'share-box'}))
+#    remove_tags.append(dict(name='div', attrs={'class': 'tags'}))
+#    remove_tags.append(dict(name='ul', attrs={'class': 'long-tools'}))
+#    remove_tags.append(dict(name='ul', attrs={'id': 'share-box2'}))
+#    remove_tags.append(dict(name='p', attrs={'id': 'original-url'}))
 
-    feeds = []
-    feeds.append(
-        (u'Top Stories', u'http://feeds.propublica.org/propublica/main'))
+#    feeds = []
+#    feeds.append(
+#        (u'Top Stories', u'http://feeds.propublica.org/propublica/main'))
 
-    conversion_options = {'comments': description, 'tags': category, 'language': 'en',
-                          'publisher': publisher}
+    feeds = [
+        ('Top Stories', 'http://feeds.propublica.org/propublica/main'),
+    ]
 
-    extra_css = '''
-                body{font-family:verdana,arial,helvetica,geneva,sans-serif;}
-                img {float: left; margin-right: 0.5em;}
-                h1 {text-align: left;}
-                a, a[href] {text-decoration: none; color: blue;}
-                div.cat {font-size: x-small; color: #666666; margin-bottom: 0.1em;}
-                div.info {font-size: small; color: #696969;}
-                '''
+#    conversion_options = {'comments': description, 'tags': category, 'language': 'en',
+#                          'publisher': publisher}
+#
+#    extra_css = '''
+#                body{font-family:verdana,arial,helvetica,geneva,sans-serif;}
+#                img {float: left; margin-right: 0.5em;}
+#                h1 {text-align: left;}
+#                a, a[href] {text-decoration: none; color: blue;}
+#                div.cat {font-size: x-small; color: #666666; margin-bottom: 0.1em;}
+#                div.info {font-size: small; color: #696969;}
+#                '''
