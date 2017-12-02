@@ -1,10 +1,12 @@
+#!/bin/sh
+
 ####################### Begin Customization Section #############################
 #
 # Name of the recipe to fetch. You can run:
 #     ebook-convert --list-recipes
 # to look for the correct name. Do not forget the .recipe suffix
-RECIPE="/home/.calibre/recipies/probublica.recipe"
-OUTDIR="/home/.calibre/recipies/propublica/"
+RECIPE="/home/.calibre/recipies/propublica.recipe"
+OUTDIR="/home/.calibre/recipies/propublica"
 
 # Select your output profile. See http://manual.calibre-ebook.com/cli/ebook-convert-14.html
 # for a list. Common choices: kindle, kindle_dx, kindle_fire, kobo, ipad, sony
