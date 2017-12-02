@@ -1,6 +1,3 @@
-s is free and unencumbered shell script released into the public domain.
-#
-
 ####################### Begin Customization Section #############################
 #
 # Name of the recipe to fetch. You can run:
