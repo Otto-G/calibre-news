@@ -24,6 +24,8 @@ class ProPublicaRecipe(BasicNewsRecipe):
 #    keep_only_tags.append(dict(name='div', attrs={'class': 'article'}))
 
     remove_tags = []
+    remove_tags.append(dict(name='body', attrs={'id': 'www-propublica-org'}))
+    remove_tags.append(dict(name='nav'))
     remove_tags.append(dict(name='div', attrs={'id': 'rollups'}))
     remove_tags.append(dict(name='div', attrs={'id': 'metadata'}))
     remove_tags.append(dict(name='div', attrs={'class': 'follow_info'}))
@@ -35,9 +37,13 @@ class ProPublicaRecipe(BasicNewsRecipe):
     remove_tags.append(dict(name='div', attrs={'class': 'related-stories'}))
     remove_tags.append(dict(name='div', attrs={'class': 'latest-stories'}))
     remove_tags.append(dict(name='div', attrs={'class': 'modal-newsletter'}))
+    remove_tags.append(dict(name='div', attrs={'id': 'modal-newsletter'}))
     remove_tags.append(dict(name='div', attrs={'class': 'modal-search'}))
+    remove_tags.append(dict(name='div', attrs={'id': 'modal-search'}))
     remove_tags.append(dict(name='div', attrs={'class': 'modal-email-share'}))
+    remove_tags.append(dict(name='div', attrs={'id': 'modal-email-share'}))
     remove_tags.append(dict(name='div', attrs={'class': 'modal-republish'}))
+    remove_tags.append(dict(name='div', attrs={'id': 'modal-republish'}))
     remove_tags.append(dict(name='div', attrs={'class': 'wayfinding'}))
     remove_tags.append(dict(name='ul', attrs={'class': 'long-tools-top'}))
     remove_tags.append(dict(name='ul', attrs={'id': 'share-box'}))
