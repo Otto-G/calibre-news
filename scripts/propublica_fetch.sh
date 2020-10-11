@@ -5,8 +5,8 @@
 # Name of the recipe to fetch. You can run:
 #     ebook-convert --list-recipes
 # to look for the correct name. Do not forget the .recipe suffix
-RECIPE="/home/.calibre/recipies/propublica.recipe"
-OUTDIR="/home/.calibre/recipies/propublica"
+RECIPE="/recipies/propublica.recipe"
+OUTDIR="/books/propublica"
 
 # Select your output profile. See http://manual.calibre-ebook.com/cli/ebook-convert-14.html
 # for a list. Common choices: kindle, kindle_dx, kindle_fire, kobo, ipad, sony
@@ -14,10 +14,10 @@ OUTPROFILE="kindle"
 
 # A text file with an email per line. This script will send an email to each one.
 # You can set it to "" to not send any email
-EMAILSFILE="/home/.calibre/recipies/emails.txt"
+EMAILSFILE="/recipies/emails.txt"
 
 # Your SMTP credentials
-. /home/.calibre/recipies/sendmail.config
+. /recipies/sendmail.config
 
 # A prefix for the emails' subject. The date will be appended to it.
 SUBJECTPREFIX="News: Propublica"
